@@ -2,72 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dr. Bashir Aliyu Umar - Nurul Hudah</title>
-  <meta property="og:title" content="Dr. Bashir Aliyu Umar - Nurul Hudah" />
-  <meta property="og:description" content="Lectures and teachings of Imam of Sunnah" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Bashir Aliyu Umar</title>
+
+  <!-- ✅ Open Graph Meta for WhatsApp/Facebook preview -->
+  <meta property="og:title" content="Dr. Bashir Aliyu Umar" />
+  <meta property="og:description" content="Welcome to the official lecture page of Dr. Bashir Aliyu Umar." />
   <meta property="og:image" content="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" />
   <meta property="og:url" content="https://nurulhudahofficial.github.io/nurul_hudah/scholar/dr-bashir-aliyu-umar/" />
+  <meta property="og:type" content="website" />
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
       background: #f9f9f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
+
     header {
-      text-align: center;
-      background: #004080;
-      color: white;
-      padding: 20px 10px;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
     }
-    header img {
-      max-width: 300px;
-      width: 90%;
-      height: auto;
-      border-radius: 8px;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
     }
+ .logo span {
+      color: teal;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #333;
+      border-top: 1px solid #eee;
+    }
+
+    .show-nav {
+      display: flex;
+    }
+
     main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 15px;
-      flex-grow: 1;
-    }
-    h1 {
-      margin-top: 20px;
-      font-weight: 700;
-  }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    footer {
-      background: #004080;
-      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 12px 10px;
-      font-size: 14px;
-      margin-top: auto;
+    }
+
+    main img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      margin-top: 30px;
     }
   </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show-nav');
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <img src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Dr. Bashir Aliyu Umar Poster" />
-    <h1>Dr. Bashir Aliyu Umar</h1>
-    <p>Lectures and teachings of Imam of Sunnah</p>
-  </header>
 
-  <main>
-    <h2>Welcome to the Nurul Hudah website</h2>
-    <p>Here you will find valuable lectures, guidance, and resources from Dr. Bashir Aliyu Umar.</p>
-  </main>
+<header>
+  <div class="logo"><b>N</b><span>urul Hudah</span></div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-  <footer>
-    &copy; 2025 Nurul Hudah. All rights reserved.
-  </footer>
+<main>
+  <h2>Dr. Bashir Aliyu Umar</h2>
+  <img src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Dr. Bashir Aliyu Umar" />
+  <p>Welcome to the official lecture page of Dr. Bashir Aliyu Umar.</p>
+</main>
+
+<footer>
+  &copy; 2025 Nurul Hudah. All rights reserved.
+</footer>
+
 </body>
 </html>
