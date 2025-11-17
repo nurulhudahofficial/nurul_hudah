@@ -3,77 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Bashir Aliyu Umar - Nurul Hudah</title>
+  <title>Nurul Hudah</title>
 
-  <!-- Meta preview for WhatsApp, Facebook etc -->
-  <meta property="og:title" content="Dr. Bashir Aliyu Umar - Nurul Hudah" />
-  <meta property="og:description" content="Visit the official page of Dr. Bashir Aliyu Umar on Nurul Hudah" />
+  <!-- Meta preview for WhatsApp, Facebook, Telegram -->
+  <meta property="og:title" content="Nurul Hudah - Official Lecture Page" />
+  <meta property="og:description" content="Welcome to the official lecture page of Dr. Bashir Aliyu Umar. Listen to Tafsir, Alfiyatu, and more." />
   <meta property="og:image" content="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" />
-  <meta property="og:url" content="https://nurulhudahofficial.github.io/nurul_hudah/scholar/dr-bashir-aliyu-umar/" />
+  <meta property="og:url" content="https://nurulhudahofficial.github.io/nurul_hudah/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f2f2f2;
-      text-align: center;
+      padding: 0;
+      background: #f8f8f8;
     }
-
     header {
-      background-color: #004d40;
-      color: white;
-      padding: 20px;
+      background: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
     }
-
-    img.poster {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      margin-top: 10px;
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
     }
-
-    h1 {
-      margin: 10px 0;
+    .logo span {
+      color: teal;
+    }
+    .menu-icon {
       font-size: 24px;
+      cursor: pointer;
     }
-
-    .content {
-      padding: 20px;
+    nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid #ddd;
     }
-
-    footer {
-      background-color: #004d40;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
-      font-size: 14px;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      padding: 12px 20px;
+      border-bottom: 1px solid #eee;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .poster {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+    }
+    .section {
+      text-align: center;
+      margin: 20px;
+    }
+    .card {
+      background: white;
+      width: 200px;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card ul li {
+      margin: 5px 0;
     }
   </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("menu");
+nav.style.display = nav.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </head>
+
 <body>
   <header>
-    <h1>Nurul Hudah</h1>
+    <div class="logo"><span>Nurul</span> Hudah</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
   </header>
 
-  <img class="poster" src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Poster Image" />
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div class="content">
-    <h2>Dr. Bashir Aliyu Umar</h2>
-    <p>Welcome to the official page. Below you'll find lectures and more.</p>
-
-    <!-- Example lecture section -->
-    <h3>Tafsir Suratul Kahfi</h3>
-    <audio controls>
-      <source src="your-lecture-file.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+  <div class="section">
+    <img src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Poster" class="poster">
+    <h2>DR. BASHIR ALIYU UMAR</h2>
+    <p>Welcome to the official lecture page of Dr. Bashir Aliyu Umar.</p>
   </div>
 
-  <footer>
-    &copy; 2025 Nurul Hudah. All rights reserved.
-  </footer>
+  <!-- Lecture Box 1 -->
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Graduation_cap.svg/800px-Graduation_cap.svg.png" alt="Lecture Icon">
+    <h3>Alfiyatu Ibn Malik</h3>
+    <ul>
+      <li><a href="#">Lecture 1</a></li>
+      <li><a href="#">Lecture 2</a></li>
+    </ul>
+  </div>
+
+  <!-- Lecture Box 2 -->
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Graduation_cap.svg/800px-Graduation_cap.svg.png" alt="Lecture Icon">
+    <h3>Tafsir Suratul Kahfi</h3>
+    <ul>
+      <li><a href="#">Lecture 1</a></li>
+      <li><a href="#">Lecture 2</a></li>
+    </ul>
+  </div>
 </body>
 </html>
-
-
