@@ -3,116 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Bashir Aliyu Umar</title>
+  <title>Dr. Bashir Aliyu Umar - Nurul Hudah</title>
 
-  <!-- ✅ Open Graph Meta for WhatsApp/Facebook preview -->
-  <meta property="og:title" content="Dr. Bashir Aliyu Umar" />
-  <meta property="og:description" content="Welcome to the official lecture page of Dr. Bashir Aliyu Umar." />
+  <!-- Meta preview for WhatsApp, Facebook etc -->
+  <meta property="og:title" content="Dr. Bashir Aliyu Umar - Nurul Hudah" />
+  <meta property="og:description" content="Visit the official page of Dr. Bashir Aliyu Umar on Nurul Hudah" />
   <meta property="og:image" content="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" />
   <meta property="og:url" content="https://nurulhudahofficial.github.io/nurul_hudah/scholar/dr-bashir-aliyu-umar/" />
-  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      background-color: #f2f2f2;
+      text-align: center;
     }
 
     header {
-      background: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: relative;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
- .logo span {
-      color: teal;
-    }
-
-    .menu-toggle {
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    nav {
-      display: none;
-      flex-direction: column;
-      background: white;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      padding: 15px 20px;
-      text-decoration: none;
-      color: #333;
-      border-top: 1px solid #eee;
-    }
-
-    .show-nav {
-      display: flex;
-    }
-
-    main {
+      background-color: #004d40;
+      color: white;
       padding: 20px;
-      text-align: center;
     }
 
-    main img {
-      max-width: 100%;
+    img.poster {
+      width: 100%;
+      max-width: 900px;
       height: auto;
-      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 20px;
     }
 
     footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
-      margin-top: 30px;
+      background-color: #004d40;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 14px;
     }
   </style>
-
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('nav');
-      nav.classList.toggle('show-nav');
-    }
-  </script>
 </head>
 <body>
+  <header>
+    <h1>Nurul Hudah</h1>
+  </header>
 
-<header>
-  <div class="logo"><b>N</b><span>urul Hudah</span></div>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Articles</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <img class="poster" src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Poster Image" />
 
-<main>
-  <h2>Dr. Bashir Aliyu Umar</h2>
-  <img src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Dr. Bashir Aliyu Umar" />
-  <p>Welcome to the official lecture page of Dr. Bashir Aliyu Umar.</p>
-</main>
+  <div class="content">
+    <h2>Dr. Bashir Aliyu Umar</h2>
+    <p>Welcome to the official page. Below you'll find lectures and more.</p>
 
-<footer>
-  &copy; 2025 Nurul Hudah. All rights reserved.
-</footer>
+    <!-- Example lecture section -->
+    <h3>Tafsir Suratul Kahfi</h3>
+    <audio controls>
+      <source src="your-lecture-file.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
+  <footer>
+    &copy; 2025 Nurul Hudah. All rights reserved.
+  </footer>
 </body>
 </html>
+
+
