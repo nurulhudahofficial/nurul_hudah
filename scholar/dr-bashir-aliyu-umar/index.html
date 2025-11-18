@@ -1,13 +1,16 @@
+Sure! Here's the updated *complete HTML code* with *"Daawatulhaq" replaced by "Nurulhudah"* in the top navbar:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nurul hudah Lectures</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurulhudah Lectures</title>
 
   <!-- Meta Preview -->
-  <meta property="og:title" content="Daawatulhaq Lectures">
-  <meta property="og:description" content="Listen to Islamic lectures like Alfiyatu Ibn Malik and Tafsirn Suratul Kahfi.">
+  <meta property="og:title" content="Nurulhudah Lectures">
+  <meta property="og:description" content="Explore Islamic lectures like Tafsirn Suratul Kahfi.">
   <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/942/942748.png">
   <meta property="og:url" content="https://yourwebsite.com">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,92 +19,110 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f8f8f8;
+      background-color: #f9f9f9;
     }
 
-    /* MENU */
+    /* Navbar */
     .navbar {
-      background-color: #ffffff;
-      padding: 10px 15px;
+      background-color: white;
+      padding: 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #ddd;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
     }
     .navbar h1 {
       font-size: 20px;
       color: #059;
+      font-family: 'Segoe Script', cursive;
     }
     .menu-icon {
-      font-size: 26px;
+      font-size: 24px;
       cursor: pointer;
     }
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #eee;
-      padding: 10px;
-    }
-    .nav-links a {
-      padding: 8px 0;
-      color: #333;
-      text-decoration: none;
+
+    /* Content */
+    .container {
+      padding: 15px;
     }
 
-    /* Lecture Card */
-    .card {
-      background: #fff;
-      width: 200px;
-      margin: 20px auto;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
+    .profile-img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .share-buttons {
+      margin: 10px 0;
+    }
+
+    .share-buttons button {
+      margin-right: 5px;
+    }
+
+    .lecture-card {
+      background: white;
+      border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 15px auto;
+      padding: 15px;
+      width: 90%;
+      max-width: 300px;
+      text-align: center;
     }
-    .card img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
+
+    .lecture-card .icon {
+      font-size: 50px;
     }
-    .card h3 {
+
+    .lecture-card h3 {
       margin: 10px 0 5px;
     }
-    .card p {
-      font-size: 14px;
-      color: #555;
+
+    .lecture-card p {
+      color: #666;
+      margin: 0;
     }
   </style>
-
-  <script>
-    function toggleMenu() {
-      const links = document.getElementById('navLinks');
-      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script>
 </head>
 <body>
 
-  <!-- Header / Menu -->
+  <!-- Navbar -->
   <div class="navbar">
-    <h1>Nurul hudah</h1>
-    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-  </div>
-  <div class="nav-links" id="navLinks">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Lectures</a>
-    <a href="#">Contact</a>
+    <h1>Nurulhudah</h1>
+    <span class="menu-icon">☰</span>
   </div>
 
-  <!-- Lecture Card -->
-  <div class="card">
-    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Lecture Icon">
-    <h3>Tafsirn Surahtul Kahfi</h3>
-    <p>Tafsirn Suratul Kahfi</p>
+  <!-- Content -->
+  <div class="container">
+    <img class="profile-img" src="https://yourimageurl.com/bashir.jpg" alt="Dr. Bashir Aliyu Umar">
+    <div class="title">DR. BASHIR ALIYU UMAR</div>
+    <p>Welcome to the official lecture page of Dr. Bashir Aliyu Umar.</p>
+
+    <div class="share-buttons">
+      <button style="background:#3b5998; color:white;">Facebook</button>
+      <button style="background:#000; color:white;">X</button>
+      <button style="background:#4caf50; color:white;">Share</button>
+    </div>
+
+    <!-- Lecture Cards -->
+    <div class="lecture-card">
+      <div class="icon">🎓</div>
+      <h3>Alfiyatu Ibn Malik</h3>
+      <p>Tafsirn Surahtul Kahfi</p>
+    </div>
+
+    <div class="lecture-card">
+      <div class="icon">🎓</div>
+      <h3>Alfiyatus Suyudi</h3>
+      <p>Tafsirn Surahtul Kahfi</p>
+    </div>
   </div>
 
 </body>
 </html>
-
-
