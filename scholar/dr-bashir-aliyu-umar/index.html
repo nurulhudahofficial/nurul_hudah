@@ -1,149 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nurul Hudah – Dr. Bashir Aliyu Umar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurul hudah Lectures</title>
 
-  <!-- Meta preview for link sharing -->
-  <meta property="og:title" content="Nurul Hudah – Official Lecture Page" />
-  <meta property="og:description" content="Visit the official lecture page of Dr. Bashir Aliyu Umar. Listen to Tafsir Suratul Kahfi & Alfiyatu Ibn Malik." />
-  <meta property="og:image" content="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" />
-  <meta property="og:url" content="https://nurulhudahofficial.github.io/nurul_hudah/scholar/dr-bashir-aliyu-umar/" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Meta Preview -->
+  <meta property="og:title" content="Daawatulhaq Lectures">
+  <meta property="og:description" content="Listen to Islamic lectures like Alfiyatu Ibn Malik and Tafsirn Suratul Kahfi.">
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta name="twitter:card" content="summary_large_image">
 
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
     }
-    header {
-      background: #ffffff;
-      padding: 15px 20px;
+
+    /* MENU */
+    .navbar {
+      background-color: #ffffff;
+      padding: 10px 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-bottom: 1px solid #ddd;
     }
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: teal;
+    .navbar h1 {
+      font-size: 20px;
+      color: #059;
     }
     .menu-icon {
-      font-size: 24px;
+      font-size: 26px;
       cursor: pointer;
     }
-    nav {
+    .nav-links {
       display: none;
-      background: #fff;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      overflow: hidden;
+      flex-direction: column;
+      background: #eee;
+      padding: 10px;
     }
-    nav a {
-      display: block;
-      padding: 10px 20px;
-      text-decoration: none;
+    .nav-links a {
+      padding: 8px 0;
       color: #333;
-      border-bottom: 1px solid #eee;
-    }
-    nav a:last-child {
-      border-bottom: none;
-    }
-    .poster {
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-    }
-    h2 {
-      margin: 10px 0 5px;
-      font-size: 24px;
-    }
-    p.intro {
-      margin: 0 20px 20px;
-      color: #555;
-    }
-    .lecture-box {
-      background: #fff;
-      margin: 15px auto;
-      padding: 15px;
-      width: 90%;
-      max-width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .lecture-box img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    .lecture-box h3 {
-      margin-bottom: 10px;
-      color: #222;
-    }
-    .lecture-box ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .lecture-box ul li {
-      margin: 5px 0;
-    }
-    .lecture-box ul li a {
       text-decoration: none;
-      color: teal;
+    }
+
+    /* Lecture Card */
+    .card {
+      background: #fff;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
     }
   </style>
 
   <script>
     function toggleMenu() {
-      var nav = document.getElementById("navLinks");
-      nav.style.display = nav.style.display === "block" ? "none" : "block";
+      const links = document.getElementById('navLinks');
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
     }
   </script>
 </head>
 <body>
 
-  <header>
-    <div class="logo">Nurul Hudah</div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <nav id="navLinks">
-      <a href="#">Home</a>
-      <a href="#">Articles</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <img src="https://nurulhudahofficial.github.io/nurul_hudah/poster.jpg" alt="Poster" class="poster" />
-  <h2>Dr. Bashir Aliyu Umar</h2>
-  <p class="intro">Welcome to the official lecture page of Dr. Bashir Aliyu Umar.</p>
-
-  <div class="lecture-box">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Graduation_cap.svg" alt="Lecture Icon">
-    <h3>Tafsirn Surahtul Kahfi</h3>
-    <ul>
-      <li><a href="#">Lecture 1</a></li>
-      <li><a href="#">Lecture 2</a></li>
-    </ul>
+  <!-- Header / Menu -->
+  <div class="navbar">
+    <h1>Nurul hudah</h1>
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Lectures</a>
+    <a href="#">Contact</a>
   </div>
 
-  <div class="lecture-box">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Graduation_cap.svg" alt="Lecture Icon">
-    <h3>Tafsir Suratul Kahfi</h3>
-    <ul>
-      <li><a href="#">Lecture 1</a></li>
-      <li><a href="#">Lecture 2</a></li>
-    </ul>
+  <!-- Lecture Card -->
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Lecture Icon">
+    <h3>Tafsirn Surahtul Kahfi</h3>
+    <p>Tafsirn Suratul Kahfi</p>
   </div>
 
 </body>
